@@ -1,4 +1,4 @@
-# Oleg Bank
+# Bank "Oleg"
 
 ## Introduction
 
