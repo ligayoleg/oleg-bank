@@ -1,28 +1,29 @@
 <div class="form-group d-flex align-items-center justify-content-center vh-100">
-  <div class="container">
+  <form class="container" [formGroup]="signUpForm">
     <div class="row">   
       <div class="col-md-12 col-lg-5">
         <label for="firstName">First Name <span class="text-danger">*</span>: </label>
-        <input type="text" class="form-control" id="firstName" />
+        <input type="text"  class="form-control" id="firstName" formControlName="firstName" />
       </div>
       <div class="col-md-12 col-lg-2">
-        <label for="middleInitial">Middle Initial: </label>
+        <label for="middleInitial" >Middle Initial: </label>
         <input
           type="text"
           class="form-control"
           id="middleInitial"
           maxlength="1"
+          formControlName="middleInitial"
         />
       </div>
       <div class="col-md-12 col-lg-5">
         <label for="lastName">Last Name<span class="text-danger">*</span>: </label>
-        <input type="text" class="form-control" id="lastName" />
+        <input type="text" class="form-control" id="lastName" formControlName="lastName" />
       </div>
     </div>
     <div class="row form-group">
       <div class="col-md-12 col-lg-6">
         <label for="email">Email<span class="text-danger">*</span>: </label>
-        <input type="email" class="form-control" id="email" />
+        <input type="email" class="form-control" id="email" formControlName="email" />
         <!-- <button class="btn primary">
           <i class="bi bi-plus-square-fill"></i>
         </button> -->
@@ -30,9 +31,9 @@
     </div>
     <div class="row mt-1">
       <div class="col-12 d-flex justify-content-center">
-        <button class="btn primary" >Sign Up</button>
-        <button class="btn btn-danger ms-1">Cancel</button>
+        <button class="btn primary" (click)="onSignUp()">Sign Up</button>
+        <button class="btn btn-danger ms-1" (click)="onCancel() ">Cancel</button>
       </div>   
     </div>  
-  </div>
+  </form>
 </div>
