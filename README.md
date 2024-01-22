@@ -6,4 +6,4 @@ This project is to create a website for a **FAKE** bank "Oleg Bank". The purpose
 
 ## Full Documentation
 
-See the [Wiki](https://github.com/ligayoleg/oleg-bank/wiki) for full documentation
+See the [Wiki](https://github.com/ligayoleg/oleg-bank/wiki/Overview) for full documentation
